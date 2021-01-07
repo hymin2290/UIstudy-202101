@@ -7,31 +7,44 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    	<header>
+  <header>
 		<nav></nav>
-
+    <div id="bread">
+      <p>Home</p>
+    </div>
 	</header>
 	<div id="wrap">
-		<article></article>
+		<article id="main">
+      <h2 class="menu-title">
+        Know Your <span>Product/Serial Number?</span>
+      </h2>
+      <form>
+        <select>
+          <option>Product</option>
+          <option>Serial Number</option>
+        </select>
+        <input type="search" name="main-search"></input>
+      </form>
+    </article>
 		<article id="category">
 			<ul>
 				<li>
 					<h2 class="menu-title"><span>PRODUCT</span> CATEGORY</h2>
           <p class="menu-explain">Start Your Product Knowledge discovery by selecting it's category</p>
         </li>
-  <li><a href="#">RANGES</a></li>
-  <li><a href="#">COOKTOPS</a></li>
-  <li><a href="#">WALL OVENS</a></li>
-  <li><a href="#">VENTILATION</a></li>
-  <li><a href="#">MICROWAVES</a></li>
-  <li><a href="#">WARMING DRAWER</a></li>
-  <li><a href="#">OUTDOOR</a></li>
-  <li><a href="#">REFRIGERATION</a></li> 
-  <li><a href="#">WINE&BEVERAGE</a></li>
-  <li><a href="#">DISHWASHERS</a></li>
-  <li><a href="#">ACCESSORIES</a></li>
-  <li><a href="#">COFFEE SYSTEMS</a></li>       
- </ul>
+        <li><a href="#">RANGES</a></li>
+        <li><a href="#">COOKTOPS</a></li>
+        <li><a href="#">WALL OVENS</a></li>
+        <li><a href="#">VENTILATION</a></li>
+        <li><a href="#">MICROWAVES</a></li>
+        <li><a href="#">WARMING DRAWER</a></li>
+        <li><a href="#">OUTDOOR</a></li>
+        <li><a href="#">REFRIGERATION</a></li> 
+        <li><a href="#">WINE&BEVERAGE</a></li>
+        <li><a href="#">DISHWASHERS</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+        <li><a href="#">COFFEE SYSTEMS</a></li>       
+       </ul>
  </article>
  <article id="topics">
 <ul>
@@ -56,11 +69,41 @@
   </ul>  
  </article>
  <article id="contact">
-   <h2 class="menu-title">EXCEPTIONAL 24/7 CUSTOMER CARE</h2>
-   <a href="#" id="contact-us">CONTACT US</a>
+   <ul>
+     <li>
+      <img src="img/customer_care.jpg" alt="customer care"> 
+     </li>
+     <li>
+      <h2 class="menu-title">EXCEPTIONAL 24/7 CUSTOMER CARE
+      </h2>
+     </li> 
+     <li>
+      <p class="menu-explain">Our dedicated support team is ready to take your call 24/7. We are committed to ensuring you have an exceptional customer experience.
+      </p>
+     </li>   
+    <li> 
+     <a href="#" id="contact-us">CONTACT US</a>
+    </li>
+   </ul>
  </article> 
 </div>
 <footer>
+  <form>
+    <input type="search" name="footer-search">
+  </form>
+  <ul id="footer-nav">
+    <li><a href="#">SITEMAP</a></li>
+    <li><a href="#">PRIVACY POLICY</a></li>
+    <li><a href="#">TERM OF USE</a></li>
+    <li><a href="#">FOLLOW US</a></li>      
+  </ul>
+  <ul id="sns">
+    <li><a href="https://www.facebook.com/">facebook</a></li>
+    <li><a href="https://www.twitter.com/">twitter</a></li>
+    <li><a href="https://www.youtube.com/">youtube</a></li>
+    <li><a href="https://www.pinterest.com/">pinterest</a></li>
+    <li><a href="#">etc</a></li>
+  </ul>
 </footer>
     <script src="script.js"></script>
   </body>
