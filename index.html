@@ -8,7 +8,107 @@
   </head>
   <body>
   <header>
-		<nav></nav>
+    <div id="panel-header">
+      <button id="gnb" class="nav-button">
+       menu
+      </button>  
+      <h1 class="logo logo1">
+      <a href="#">LOGO</a>
+      </h1>
+      <button class="search-send1 nav-button">
+      search
+      </button> 
+    </div>  
+    <div id="header-search" class="box-search">
+      <form>
+        <input type="search" name="search-all1"
+        placeholder="Search">
+        <button class="search-send1" id="send-header"
+        name="submit">
+        submit  
+        </button>
+      </form>
+    </div>
+		<nav>
+      <ul class="nav-menu">
+        <li>
+          <a href="#" class="nav-menu-name">
+          PRODUCT SUPPORT
+          </a>
+          <ul class="nav-menu2">
+           <li><a href="#">RANGES</a></li>
+           <li><a href="#">COOKTOPS</a></li>
+           <li><a href="#">WALL OVENS</a></li>
+           <li><a href="#">VENTILATION</a></li>
+           <li><a href="#">MICROWAVES</a></li>
+           <li><a href="#">WARMING DRAWER</a></li>
+           <li><a href="#">OUTDOOR</a></li>
+           <li><a href="#">REFRIGERATION</a></li> 
+           <li><a href="#">WINE&BEVERAGE</a></li>
+           <li><a href="#">DISHWASHERS</a></li>
+           <li><a href="#">ACCESSORIES</a></li>
+           <li><a href="#">COFFEE SYSTEMS</a></li> 
+          </ul>
+        </li>
+        <li>
+        <a href="#" class="nav-menu-name">
+        TOPICS
+        </a>  
+        <ul class="nav-menu2">
+         <li><a href="#">ERROR CODES</a></li>
+         <li><a href="#">SERVICE GUIDE</a></li>
+         <li><a href="#">PARTS  CATALOG</a></li>
+         <li><a href="#">SYMPTOMS</a></li>
+         <li><a href="#">PRODUCT INFO</a></li>
+        <li><a href="#">FAQ</a></li>    
+        </ul>        
+        </li>
+        <li>
+          <a href="#" class="nav-menu-name">
+          TRAINING
+          </a>
+          <ul class="nav-menu2">
+            <li>
+            <a href="#">
+            Technical Training
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            Customer Service Training
+            </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav-menu-name">
+          NEWSLETTERS
+          </a>          
+        </li> 
+        <li>
+          <a href="#" class="nav-menu-name">
+          ADMIN
+          </a>          
+        </li>                               
+      </ul>
+      <ul class="nav-menu">
+        <li>
+        <a href="#" class="nav-menu-name">
+        TERM OF USE
+        </a>          
+        </li>  
+        <li>
+        <a href="#" class="nav-menu-name">
+        CONTACT US
+        </a>   
+        <li>
+        <a href="#" class="nav-menu-name">
+        LOGOUT
+        </a>          
+        </li>               
+        </li>         
+      </ul>  
+    </nav>
     <div id="bread">
       <p>Home</p>
     </div>
@@ -23,7 +123,10 @@
           <option>Product</option>
           <option>Serial Number</option>
         </select>
-        <input type="search" name="main-search"></input>
+        <input type="search" name="search-product" placeholder="Enter your model number">
+        </input>
+        <button class="search-send1" id="send-main" name="submit">
+        </button>
       </form>
     </article>
 		<article id="category">
@@ -43,7 +146,7 @@
         <li><a href="#">WINE&BEVERAGE</a></li>
         <li><a href="#">DISHWASHERS</a></li>
         <li><a href="#">ACCESSORIES</a></li>
-        <li><a href="#">COFFEE SYSTEMS</a></li>       
+        <li><a href="#">COFFEE SYSTEMS</a></li>    
        </ul>
  </article>
  <article id="topics">
@@ -88,10 +191,18 @@
  </article> 
 </div>
 <footer>
+  <div id="nav-footer1">
+    
+  </div>  
+  <div class="box-search">
   <form>
-    <input type="search" name="footer-search">
+    <input type="search" name="footer-search"
+    placeholder="Search">
+    <button class="search-send2" name="submit">
+    </button>
   </form>
-  <ul id="footer-nav">
+  </div>
+  <ul id="nav-footer2">
     <li><a href="#">SITEMAP</a></li>
     <li><a href="#">PRIVACY POLICY</a></li>
     <li><a href="#">TERM OF USE</a></li>
