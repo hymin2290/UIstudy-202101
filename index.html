@@ -7,234 +7,268 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  <header>
-    <div id="panel-header">
-      <button id="gnb" class="nav-button">
-       menu
-      </button>  
-      <h1 class="logo logo1">
-      <a href="#">LOGO</a>
-      </h1>
-      <button class="search-send1 nav-button">
-      search
-      </button> 
-    </div>  
-    <div id="header-search" class="box-search">
-      <form>
-        <input type="search" name="search-all1"
-        placeholder="Search">
-        <button class="search-send1" id="send-header"
-        name="submit">
-        submit  
-        </button>
-      </form>
-    </div>
-		<nav>
-      <ul class="nav-menu">
-        <li>
-          <a href="#" class="nav-menu-name">
-          PRODUCT SUPPORT
-          </a>
-          <ul class="nav-menu2">
-           <li><a href="#">RANGES</a></li>
-           <li><a href="#">COOKTOPS</a></li>
-           <li><a href="#">WALL OVENS</a></li>
-           <li><a href="#">VENTILATION</a></li>
-           <li><a href="#">MICROWAVES</a></li>
-           <li><a href="#">WARMING DRAWER</a></li>
-           <li><a href="#">OUTDOOR</a></li>
-           <li><a href="#">REFRIGERATION</a></li> 
-           <li><a href="#">WINE&BEVERAGE</a></li>
-           <li><a href="#">DISHWASHERS</a></li>
-           <li><a href="#">ACCESSORIES</a></li>
-           <li><a href="#">COFFEE SYSTEMS</a></li> 
-          </ul>
-        </li>
-        <li>
-        <a href="#" class="nav-menu-name">
-        TOPICS
-        </a>  
-        <ul class="nav-menu2">
-         <li><a href="#">ERROR CODES</a></li>
-         <li><a href="#">SERVICE GUIDE</a></li>
-         <li><a href="#">PARTS  CATALOG</a></li>
-         <li><a href="#">SYMPTOMS</a></li>
-         <li><a href="#">PRODUCT INFO</a></li>
-        <li><a href="#">FAQ</a></li>    
-        </ul>        
-        </li>
-        <li>
-          <a href="#" class="nav-menu-name">
-          TRAINING
-          </a>
-          <ul class="nav-menu2">
-            <li><a href="#">Technical Training</a></li>
-            <li><a href="#">Customer Service Training</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="nav-menu-name">NEWSLETTERS</a>          
-        </li> 
-        <li>
-          <a href="#" class="nav-menu-name">ADMIN</a>    
-        </li>                               
-      </ul>
-      <ul class="nav-menu">
-        <li>
-        <a href="#" class="nav-menu-name">
-        TERM OF USE
-        </a>          
-        </li>  
-        <li>
-        <a href="#" class="nav-menu-name">
-        CONTACT US
-        </a>   
-        <li>
-        <a href="#" class="nav-menu-name">
-        LOGOUT
-        </a>          
-        </li>               
-        </li>         
-      </ul>  
-    </nav>
-    <div id="bread">
-      <p>Home</p>
-    </div>
-	</header>
-	<div id="wrap">
-		<article id="main">
-     <h2 class="menu-title">
-     Know Your <span>Product/Serial Number?</span>
-     </h2>
-     <form>
-        <select>
-          <option>Product</option>
-          <option>Serial Number</option>
-        </select>
-        <input type="search" name="search-product" placeholder="Enter your model number">
-        </input>
-        <button class="search-send1" id="send-main" name="submit">
-        </button>
-     </form>
-    </article>
-		<article id="category">
-    	<h2 class="menu-title">
-        <span>PRODUCT</span> CATEGORY</h2>
-        <p class="menu-explain">Start Your Product Knowledge discovery by selecting it's category</p>  
-			<ul>
-        <li class="category-item">
-          <a href="#">RANGES</a>
-        </li>
-        <li class="category-item">
-          <a href="#">COOKTOPS</a>
-        </li>
-        <li class="category-item">
-          <a href="#">WALL OVENS</a>
-        </li>
-        <li class="category-item">
-          <a href="#">VENTILATION</a>
-        </li>
-        <li class="category-item">
-          <a href="#">MICROWAVES</a>
-        </li>
-        <li class="category-item">
-          <a href="#">WARMING DRAWER</a>
-        </li>
-        <li class="category-item">
-          <a href="#">OUTDOOR</a>
-        </li>
-        <li class="category-item">
-          <a href="#">REFRIGERATION</a>
-        </li> 
-        <li class="category-item">
-          <a href="#">WINE&BEVERAGE</a>
-        </li>
-        <li class="category-item">
-          <a href="#">DISHWASHERS</a>
-        </li>
-        <li class="category-item">
-          <a href="#">ACCESSORIES</a>
-        </li>
-        <li class="category-item">
-          <a href="#">COFFEE SYSTEMS</a>
-        </li>    
-      </ul>
-    </article>
-    <article id="topics">  
-    <h2 class="menu-title">TOPICS</h2>
-    <p class="menu-explain">Start Your Product Knowledge discovery by selecting it's category</p>
+    <div id="wrap">
+      <header>
+        <div id="panelHeader">
+        <button id="gnb" class="nav_button">menu
+        </button>  
+        <h1 class="logo logo1">
+          <a href="#">LOGO</a>
+        </h1>
+        <button type="button" class="search_send1 nav_button">search
+        </button> 
+        </div>  
+        <form id="headerSearch" class="box_search">
+          <fieldset>
+            <legend>Search</legend>
+            <input type="search" name="search_all1" placeholder="Search">
+            <button type="submit" class="search_send1" id="sendHeader" name="submit">submit  
+            </button>
+          </fieldset>
+        </form>
+		    <nav>
+          <ul class="nav_menu">
+            <li>
+              <a href="#" class="nav_menu_name">PRODUCT SUPPORT
+              </a>
+              <ul class="nav_menu2">
+                <li><a href="#">RANGES</a></li>
+                <li><a href="#">COOKTOPS</a></li>
+                <li><a href="#">WALL OVENS</a></li>
+                <li><a href="#">VENTILATION</a></li>
+                <li><a href="#">MICROWAVES</a></li>
+                <li><a href="#">WARMING DRAWER</a></li>
+                <li><a href="#">OUTDOOR</a></li>
+                <li><a href="#">REFRIGERATION</a></li> 
+                <li><a href="#">WINE&BEVERAGE</a></li>
+                <li><a href="#">DISHWASHERS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+               <li><a href="#">COFFEE SYSTEMS</a></li> 
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_menu_name">TOPICS</a>  
+              <ul class="nav_menu2">
+                <li><a href="#">ERROR CODES</a></li>
+                <li><a href="#">SERVICE GUIDE</a></li>
+                <li><a href="#">PARTS  CATALOG</a></li>
+                <li><a href="#">SYMPTOMS</a></li>
+                <li><a href="#">PRODUCT INFO</a></li>
+                <li><a href="#">FAQ</a></li>    
+              </ul>        
+            </li>
+            <li>
+              <a href="#" class="nav_menu_name">
+              TRAINING
+              </a>
+              <ul class="nav_menu2">
+                <li><a href="#">Technical Training</a>
+                </li>
+                <li><a href="#">Customer Service Training</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-menu_name">NEWSLETTERS</a>
+          </li> 
+          <li>
+            <a href="#" class="nav_menu_name">ADMIN</a>    
+          </li>                               
+        </ul>
+        <ul class="nav_menu">
+          <li>
+            <a href="#" class="nav_menu_name">TERM OF USE
+            </a>          
+          </li>  
+          <li>
+            <a href="#" class="nav_menu_name">CONTACT US
+            </a> 
+          </li>    
+          <li>
+            <a href="#" class="nav_menu_name">LOGOUT
+            </a>                         
+          </li>         
+          </ul>  
+        </nav>
+        <div id="bread">
+          <p>Home</p>
+        </div>
+      </header>      
+      <article id="main">
+        <p class="menu_title">
+          Know Your <span>Product/Serial Number?</span>
+        </p>
+        <form id="productSearch">
+          <fieldset>
+            <legend>Product Search</legend>
+            <select>
+              <option>Product</option>
+              <option>Serial Number</option>
+            </select>
+            <input type="search" name="product_search" placeholder="Enter your model number">
+            </input>
+            <button type="submit" class="search_send1" id="sendMain" name="search_send">
+Search  <!--css로 숨김처리-->
+            </button>
+          </fieldset>        
+        </form>
+      </article>
+      <article id="category">
+        <p class="menu_title">
+          <span>PRODUCT</span> CATEGORY
+        </p>
+        <p class="menu_explain">Start Your Product Knowledge discovery by selecting it's category
+        </p>  
+        <ul>
+<li class="category_item">
+<a href="#">
+  <img alt="Ranges"></img>
+  <p class="category_name">RANGES</p>
+  </a>
+<!--img 삽입-->
+</li>
+<li class="category_item">
+<a href="#">
+    <img alt="Cooktops"></img>
+    <p class="category_name">COOKTOPS</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Wall Ovens"></img>  
+<p class="category_name">WALL OVENS</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Cooktops"></img>  
+<p class="category_name">VENTILATION</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Microwaves"></img>   
+<p class="category_name">MICROWAVES</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Warming Drawer"></img>   
+<p class="category_name">WARMING DRAWER</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Outdoor"></img>   
+<p class="category_name">OUTDOOR</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Refrigerator"></img>   
+<p class="category_name">REFRIGERATION</p>
+</a>
+</li> 
+<li class="category_item">
+<a href="#">
+<img alt="Wine,Beverage"></img>  
+<p class="category_name">WINE&BEVERAGE</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Dishwashers"></img>   
+<p class="category_name">DISHWASHERS</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Accesories"></img>  
+<p class="category_name">ACCESSORIES</p>
+</a>
+</li>
+<li class="category_item">
+<a href="#">
+<img alt="Coffee Systems"></img>  
+<p class="category_name">COFFEE SYSTEMS</p>
+</a>
+</li>    
+        </ul>
+      </article>        
+      <article id="topics">  
+    <p class="menu_title">TOPICS</p>
+    <p class="menu_explain">Start Your Product Knowledge discovery by selecting it's category</p>
     <ul>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입-->
        ERROR CODES
      </a>
      </li>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입--> 
        SERVICE GUIDE   
      </a>
      </li>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입-->        
        PARTS  CATALOG
      </a>
      </li>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입-->    
        SYMPTOMS
      </a>
      </li>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입-->   
        PRODUCT INFO
        </a>
      </li>
-     <li class="topics-item">
+     <li class="topics_item">
      <a href="#">
        <h4></h4> <!--css background 속성으로 아이콘 이미지 삽입-->     
        FAQ
      </a>
      </li>    
    </ul> 
- </article>
- <article id="recent">
-    <h2 class="menu-title">RECENT SEARCHED</h2>
-    <p class="menu-explain">Start Your Product Knowledge discovery by selecting it's category</p> 
-    <a href="#"class="prev"></a>
-    <a href="#"class="next"></a> 
+      </article>
+      <article id="recent">
+    <p class="menu_title">RECENT SEARCHED</p>
+    <p class="menu_explain">Start Your Product Knowledge discovery by selecting it's category</p> 
+    <button type="button" class="prev"></button>
+    <button type="button" class="next"></button> 
     <ul>
-     <li class="recent-item">
+     <li class="recent_item">
        <img src="img/RF22N9781SGAA.png" alt="refrigerator">
        <p>22 cu.ft, COunter Depth 4-Door Flex™
         with 21.5 In. Conected Touch Screen 
         Family Hub™ Refrigerator
        </p>
-       <a>RF22N9781SGAA</a>
+       <a href="#">RF22N9781SGAA</a>
      </li>
-     <li class="recent-item">
+     <li class="recent_item">
      </li>
     </ul>     
- </article>
- <article id="contact">
+      </article>
+      <article id="contact">
     <img src="img/customer_care.jpg" alt="customer care"> 
-    <h2 class="menu-title">EXCEPTIONAL 24/7 CUSTOMER CARE
-    </h2> 
-    <p class="menu-explain">Our dedicated support team is ready to take your call 24/7. We are committed to ensuring you have an exceptional customer experience.
+    <p class="menu_title">EXCEPTIONAL 24/7 CUSTOMER CARE
+    </p> 
+    <p class="menu_explain">Our dedicated support team is ready to take your call 24/7. We are committed to ensuring you have an exceptional customer experience.
     </p>
-    <a href="#" id="contact-us">CONTACT US</a>
- </article> 
-</div>
+    <a href="#" id="contactUs">CONTACT US</a>
+      </article> 
 <footer>
-  <div id="footer-nav">
-    <ul id="footer-nav-menu">
+  <div id="footerNav">
+    <ul id="footer_nav_menu">
      <li>
-      <h4>PRODUCT SUPPORT</h4>
-      <ul class="footer-nav-menu2">
+      <p class="">PRODUCT SUPPORT</p>
+      <ul class="footer_nav_menu2">
        <li><a href="#">RANGES</a></li>
        <li><a href="#">COOKTOPS</a></li>
        <li><a href="#">WALL OVENS</a></li>
@@ -250,8 +284,8 @@
       </ul>  
      </li> 
      <li>
-      <h4>TOPIC</h4>
-      <ul class="footer-nav-menu2">
+      <p>TOPIC</p>
+      <ul class="footer_nav_menu2">
        <li><a href="#">ERROR CODES</a></li>
        <li><a href="#">SERVICE GUIDE</a></li>
        <li><a href="#">PARTS  CATALOG</a></li>
@@ -262,7 +296,7 @@
      </li>
      <li>
       <h4>TRAINING</h4>
-      <ul class="footer-nav-menu2">
+      <ul class="footer_nav_menu2">
         <li>
         <a href="#">Technical Training</a>
         </li>
@@ -271,18 +305,18 @@
         </li>   
       </ul>                
      </li>     
-    </ul>
-    <li><a href="#">NEWSLETTERS</a></li>  
+    <li><a href="#">NEWSLETTERS</a></li>
+      </ul>    
   </div>  
-  <div id="footer-search" class="box-search">
+  <div id="footerSearch" class="box_search">
   <form>
     <input type="search" name="footer-search"
     placeholder="Search">
-    <button class="search-send2" name="submit">
+    <button class="search_send2" name="submit">
     </button>
   </form>
   </div>
-  <ul id="info-corp">
+  <ul id="infoCorp">
     <li><a href="#">SITEMAP</a></li>
     <li><a href="#">PRIVACY POLICY</a></li>
     <li><a href="#">TERM OF USE</a></li>
@@ -296,6 +330,7 @@
     <li><a href="#">etc</a></li>
   </ul>
 </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
