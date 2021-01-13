@@ -1,6 +1,7 @@
 body{
   width: 100%;
   background-color: rgb(50,50,50);}
+  /*추후 각 요소마다 배경색 넣고 뺄 것*/
   #wrap{
    width: 100%;
    text-align: center;}
@@ -14,6 +15,7 @@ body{
         height: 40px;
         color:transparent;
       }*/
+    header{background-color:#191919;}  
         #gnb{
           width:32px;
           height: 22px;
@@ -22,16 +24,32 @@ body{
           font-size:0;          
         }
           .nav_menu2 li{font-size: 9px;}
+        .search_send1{
+          width: 26px;
+          height: 30px;
+          background-image:url(img/icons.png);
+          background-repeat: no-repeat;
+          background-position: -100px 0px;
+          font-size:0;
+        }
     article{width: 100%;}
+      .menu_title{color:#fff;}
+      .menu_title>span{font-weight: bold;}
+      .menu_explain{color:#808080;}
     #main{
       background-image: url(img/main_cover.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left top;
     }
-      .menu_title{color:#fff;}
-      .menu_title>span{font-weight: bold;}
-      .menu_explain{color:#808080;}
+        .search_send2{
+          width: 26px;
+          height: 32px;
+          background-image:url(img/icons.png);
+          background-repeat: no-repeat;
+          background-position: -100px -26px;
+          font-size:0;          
+        }
 
       .recent_item>p{color:#fff;}
       .topics_item p{
@@ -66,11 +84,38 @@ body{
         /*FAQ*/
       }
 
+    #recent>button{
+      width:  34px;
+      height: 52px;
+      background-image:url(img/icons.png);
+      background-repeat:no-repeat;
+    }
+      .prev{
+        background-position: -194px -70px;
+      }
+      .prev:hover{
+        background-position: -266px -70px;
+      }
+      .next{
+        background-position: -230px -70px;
+      }
+      .next:hover{
+        background-position: -302px -70px;
+      }
 
-
-      #footer_nav_menu>li>p{color:#fff;}
+    footer{background-color:#000;}
+      #footerNav{background-color:#1f1f1f;}
+      #footerNavMenu>li>p{color:#fff;}
         .footer_nav_menu2>li>a{color:#808080;}
         .footer_nav_menu2>li>a:hover{
           text-decoration: underline;
           color: #0099ff;
+        }
+
+        .search_send3{
+          width: 18px;
+          height: 18px;
+          background-image:url(img/icons.png);
+          background-repeat: no-repeat;
+          background-position: -132px -6px;
         }
