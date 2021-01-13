@@ -4,6 +4,16 @@ body{
   #wrap{
    width: 100%;
    text-align: center;}
+      .logo1 a::before{
+        background-image: url(img/icons.png);
+        background-repeat: no-repeat;
+        background-position:0px -136px;
+      }
+      .logo1 a{
+        width: 120px;
+        height: 40px;
+        color:transparent;
+      }
           .nav_menu2 li{font-size: 9px;}
     article{width: 100%;}
     #main{
