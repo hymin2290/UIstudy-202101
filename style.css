@@ -8,3 +8,12 @@ button{cursor: pointer; border:0;
 background-color:transparent; }
 fieldset{border:0;}
 legend{visibility: hidden; overflow: hidden;}
+  .menu_title, .menu_explain{
+    font-family: 'Myriad pro','Malgun Gothic',dotum,sans-serif;
+  }
+  .category_item>a, .topics_item>a{
+    font-family: 'Noto Sans Korean','Malgun Gothic',dotum,sans-serif;color:#fff;
+  }
+  #sns>li:first-child{
+      font-family: 'Noto Sans Korean','Malgun Gothic',dotum,sans-serif;color:#fff;  
+  }
