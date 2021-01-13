@@ -1,0 +1,10 @@
+
+h1,h2,p{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+  a:hover{text-decoration: none;}
+  a:visited{text-decoration: none;}
+button{cursor: pointer; border:0; 
+background-color:transparent; }
+fieldset{border:0;}
+legend{visibility: hidden; overflow: hidden;}
