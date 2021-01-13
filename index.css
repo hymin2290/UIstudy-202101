@@ -2,7 +2,7 @@ body{
   width: 100%;
   background-color: rgb(50,50,50);}
   #wrap{
-    width: 100%;
+   width: 100%;
    text-align: center;}
           .nav_menu2 li{font-size: 9px;}
     article{width: 100%;}
@@ -15,7 +15,40 @@ body{
       .menu_title{color:#fff;}
       .menu_title>span{font-weight: bold;}
       .menu_explain{color:#808080;}
+
       .recent_item>p{color:#fff;}
+      .topics_item p{
+        width:70px; 
+        height: 86px;
+        background-image: url(img/icons.png);
+        background-repeat: no-repeat;
+        font-size:0;
+        }
+      .topics_item:first-child p{
+        background-position: -236px -124px;
+        /*Error Codes*/
+      }
+      .topics_item:nth-child(2) p{
+        background-position: -307px -124px;
+        /*Service Guide*/
+      }
+      .topics_item:nth-child(3) p{
+        background-position: -384px -124px;
+        /*Parts Catalog*/
+      }
+      .topics_item:nth-child(4) p{
+        background-position: -464px -124px;
+        /*Symptoms*/
+      }
+      .topics_item:nth-child(5) p{
+        background-position: -542px -124px;
+        /*Product Info*/
+      }
+      .topics_item:last-child p{
+        background-position: -614px -124px;
+        /*FAQ*/
+      }
+
 
 
       #footer_nav_menu>li>p{color:#fff;}
