@@ -119,3 +119,14 @@ body{
           background-repeat: no-repeat;
           background-position: -132px -6px;
         }
+      #sns>li>a{
+        width: 20px;
+        height: 20px;
+        background-image:url(img/icons.png);
+      }  
+      #sns>li>a:first-child{
+        background-position: -164px 0px;
+      }
+      #sns>li>a:nth-child(2){
+        background-position: -164px 0px;
+      }
