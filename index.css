@@ -4,7 +4,7 @@ body{
   #wrap{
    width: 100%;
    text-align: center;}
-      .logo1 a::before{
+/*      .logo1 a::after{
         background-image: url(img/icons.png);
         background-repeat: no-repeat;
         background-position:0px -136px;
@@ -13,7 +13,14 @@ body{
         width: 120px;
         height: 40px;
         color:transparent;
-      }
+      }*/
+        #gnb{
+          width:32px;
+          height: 22px;
+          background-image: url(img/icons.png);
+          background-repeat: no-repeat;
+          font-size:0;          
+        }
           .nav_menu2 li{font-size: 9px;}
     article{width: 100%;}
     #main{
