@@ -16,14 +16,14 @@ body{
         font-size:0;
       }*/
     header{background-color:#191919;}  
-        #gnb{
+        #gnb::before{
+          content:'';
           width:32px;
           height: 22px;
           background-image: url(img/icons.png);
           background-repeat: no-repeat;
           font-size:0;          
         }
-          .nav_menu2 li{font-size: 9px;}
         .search_send1{
           width: 26px;
           height: 30px;
@@ -182,3 +182,4 @@ body{
               background-position: -260px 0px;
 
 /*mobile*/
+
