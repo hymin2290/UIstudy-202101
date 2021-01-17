@@ -137,10 +137,14 @@ body{background-color: rgb(50,50,50);}
         }
 
       .topics_item{
+        width: 50%;
         margin: 0;
         position: relative;
         }
-      .topics_item>a{display: block;}  
+      .topics_item>a{
+        width: 100%;
+        height: 100%;
+        }  
       .topics_item>a::before{
         content: '';
         position: absolute;
@@ -171,7 +175,7 @@ body{background-color: rgb(50,50,50);}
         background-position: -542px -124px;
         /*Product Info*/
       }
-     .topics_item:last-child p{
+     .topics_item:last-child>a::before{
         background-position: -614px -124px;
         /*FAQ*/
       }
