@@ -137,6 +137,7 @@ body{background-color: rgb(50,50,50);}
         }
 
       .topics_item{
+        display: inline-block;        
         width: 50%;
         margin: 0;
         position: relative;
@@ -147,9 +148,7 @@ body{background-color: rgb(50,50,50);}
         }  
       .topics_item>a::before{
         content: '';
-        position: absolute;
-        top:0;
-        left:25%;
+        display: block;
         width:  70px; 
         height: 86px;
         background-image: url(img/icons.png);
