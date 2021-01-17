@@ -1,4 +1,4 @@
-body{background-color: rgb(50,50,50);}
+body{background-color: #282828;}
  
   #wrap{ text-align: center;}
       .logo1 a::before{
@@ -185,7 +185,17 @@ body{background-color: rgb(50,50,50);}
       background-image:url(img/icons.png);
       background-repeat:no-repeat;
     }
-      .recent_item>p{color:#fff;}    
+      .recent_item{
+        background-color: #333;
+        color: #c8c8c8;
+        } 
+      .recent_item>a{
+        width: 33.3%;
+        color:#c8c8c8;
+        border: 2px solid #c8c8c8;
+        border-radius: 20px;
+      }
+
       .prev{
         background-position: -194px -70px;
       }
