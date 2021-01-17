@@ -218,6 +218,10 @@ body{background-color: #282828;}
           color: #0099ff;
         }
 
+      #footerSearch input{
+        background-color: transparent;
+        border: 2px solid #808080;
+      }
         .search_send3{
           width: 18px;
           height: 18px;
@@ -294,6 +298,10 @@ body{background-color: #282828;}
         width: 50%;
         height: 150px;
       }
+    #footerSearch{
+      width: 80%;
+      margin: 0 auto;
+    }  
 }
 @media only screen and (min-width: 566px) {
       #panelHeader{height: 90px;}
