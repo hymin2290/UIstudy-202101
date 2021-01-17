@@ -13,30 +13,64 @@ body{background-color: rgb(50,50,50);}
         height: 40px;
         font-size:0;
       }*/
-    header{background-color:#191919;}  
-        #gnb::before{
+    header{
+      background-color:#191919;
+      position: relative;
+      }
+      .nav_button{          
+        width: 12.5%;
+        height: 100%;
+        position: relative;         
+        }      
+      .nav_button:hover{background-color:#383838;} 
+        #gnb::before{ /*gnb 아이콘 이미지*/
           content:'';
           width:32px;
           height: 22px;
+          position: absolute;
           background-image: url(img/icons.png);
           background-repeat: no-repeat;
+          background-position: 0 0;
           font-size:0;          
         }
-        /*nav{display: none;} 임시*/
+
         nav{
+          display: block; 
           width: 55%;
+          height: 100%;
+          position: relative;
           }
-          .nav_menu li{
+          .nav_menu>li{
             width: 100%;
             padding-left: 5%;
-            display: block;
+            position: relative;
             text-align: left;
             background-color: #282828;
             }
-          .nav_menu li:hover{
+
+          .nav_menu>li:hover{
             background-color:#383838;
           }
 
+          .nav_menu>li:hover .nav_menu2{
+            display:block;
+          }
+          
+            .nav_menu2{
+              display: none;
+              width: 100%;
+              position: absolute;
+              top:100%;
+              left:0;
+              }
+            .nav_menu2>li{
+              width: 100%;   
+              position: relative;           
+              text-align: left;
+              background-color: #282828;               }  
+            .nav_menu2>li:hover{
+              background-color:#383838;
+            }  
         #headerSearch{display: none;} /*임시*/
         .search_send1{
           width: 26px;
