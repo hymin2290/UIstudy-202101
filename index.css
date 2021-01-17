@@ -24,7 +24,8 @@ body{background-color: rgb(50,50,50);}
       #panelHeader{
         width: 100%;
         position: relative;
-      }      
+      }  
+        .nav_button{font-size:0;}    
         .nav_button:hover{background-color:#383838;} 
           #gnb::before{ /*gnb 아이콘 이미지*/
             content:'';
@@ -33,14 +34,25 @@ body{background-color: rgb(50,50,50);}
             position: absolute;
             background-image: url(img/icons.png);
             background-repeat: no-repeat;
-            background-position: 0 0;
-            font-size:0;          
+            background-position: 0 0;         
           }
+        .search_send1::before{
+          content:'';
+          width: 26px;
+          height: 30px;
+          position: absolute;
+          background-image:url(img/icons.png);
+          background-repeat: no-repeat;
+          background-position: -100px 0px;
+          }          
           #gnb{
             top:0;
             left:0;
           }
-
+          #btnSearch{
+            top:0;
+            right: 0;
+          }
           nav{
             display: block; 
             width: 55%;
@@ -82,20 +94,11 @@ body{background-color: rgb(50,50,50);}
                 background-color:#383838;
               }  
           #headerSearch{display: none;} /*임시*/
-          .search_send1{
-            width: 26px;
-            height: 30px;
-            background-image:url(img/icons.png);
-            background-repeat: no-repeat;
-            background-position: -100px 0px;
-            font-size:0;
-          }
-          #bread{
-            z-index: -1;
-            background-color: rgba(0,0,0,0.4);
-            }
+
+          #bread{background-color: rgba(0,0,0,0.4); }
           #bread>p{
             text-align: left;
+            font-weight: lighter;
             color: #a4a4a4;}
     article{
       width: 100%;
@@ -259,7 +262,10 @@ body{background-color: rgb(50,50,50);}
     #panelHeader{height: 45px;}
     nav{height: 568px;}
       .nav_menu li{height: 24px;}
-      #bread{height: 26px;}
+      #bread{
+        height: 26px;
+        font-size: 11px;
+        }
   article{padding-top: 40px;}  
   #main{padding-top: 60px;}  
       .category_item{
@@ -284,7 +290,10 @@ body{background-color: rgb(50,50,50);}
           font-size:  22px;
           }
         .nav_menu li{height: 48px;}
-      #bread{height: 52px;}
+      #bread{
+        height: 52px;
+        font-size:20px;
+      }
     article{padding-top: 80px;}  
     #main{padding-top: 120px;}
       .menu_title{font-size: 44px;}
