@@ -14,76 +14,89 @@ body{background-color: rgb(50,50,50);}
         font-size:0;
       }*/
     header{
-      background-color:#191919;
-      position: relative;
-      }
-      .nav_button{          
-        width: 12.5%;
-        height: 100%;
-        position: relative;         
-        }      
-      .nav_button:hover{background-color:#383838;} 
-        #gnb::before{ /*gnb 아이콘 이미지*/
-          content:'';
-          width:32px;
-          height: 22px;
-          position: absolute;
-          background-image: url(img/icons.png);
-          background-repeat: no-repeat;
-          background-position: 0 0;
-          font-size:0;          
-        }
-
-        nav{
-          display: block; 
-          width: 55%;
+      width: 100%;
+      background-color:#191919;}
+        .nav_button{          
+          width: 12.5%;
           height: 100%;
-          position: relative;
+          position: absolute;         
+          }    
+      #panelHeader{
+        width: 100%;
+        position: relative;
+      }      
+        .nav_button:hover{background-color:#383838;} 
+          #gnb::before{ /*gnb 아이콘 이미지*/
+            content:'';
+            width:32px;
+            height: 22px;
+            position: absolute;
+            background-image: url(img/icons.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-size:0;          
           }
-          .nav_menu>li{
-            width: 100%;
-            padding-left: 5%;
-            position: relative;
-            text-align: left;
-            background-color: #282828;
+          #gnb{
+            top:0;
+            left:0;
+          }
+
+          nav{
+            display: block; 
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            top:100%;
+            left:0;
+            z-index: 1;
+            }
+            .nav_menu>li{
+              width: 100%;
+              padding-left: 5%;
+              position: relative;
+              text-align: left;
+              background-color: #282828;
+              }
+
+            .nav_menu>li:hover{
+              background-color:#383838;
             }
 
-          .nav_menu>li:hover{
-            background-color:#383838;
+            .nav_menu>li:hover .nav_menu2{
+              display:block;
+            }
+            
+              .nav_menu2{
+                display: none;
+                width: 100%;
+                position: absolute;
+                top:100%;
+                left:0;
+                }
+              .nav_menu2>li{
+                width: 100%;   
+                position: relative;           
+                text-align: left;
+                background-color: #282828;               }  
+              .nav_menu2>li:hover{
+                background-color:#383838;
+              }  
+          #headerSearch{display: none;} /*임시*/
+          .search_send1{
+            width: 26px;
+            height: 30px;
+            background-image:url(img/icons.png);
+            background-repeat: no-repeat;
+            background-position: -100px 0px;
+            font-size:0;
           }
-
-          .nav_menu>li:hover .nav_menu2{
-            display:block;
-          }
-          
-            .nav_menu2{
-              display: none;
-              width: 100%;
-              position: absolute;
-              top:100%;
-              left:0;
-              }
-            .nav_menu2>li{
-              width: 100%;   
-              position: relative;           
-              text-align: left;
-              background-color: #282828;               }  
-            .nav_menu2>li:hover{
-              background-color:#383838;
-            }  
-        #headerSearch{display: none;} /*임시*/
-        .search_send1{
-          width: 26px;
-          height: 30px;
-          background-image:url(img/icons.png);
-          background-repeat: no-repeat;
-          background-position: -100px 0px;
-          font-size:0;
-        }
-        #bread{background-color: rgba(0,0,0,0.4);}
-        #bread>p{
-          text-align: left;
-          color: #a4a4a4;}
+          #bread{
+            z-index: -1;
+            background-color: rgba(0,0,0,0.4);
+            }
+          #bread>p{
+            text-align: left;
+            color: #a4a4a4;}
     article{
       width: 100%;
       padding: 0 20%;
