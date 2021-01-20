@@ -260,57 +260,61 @@ article {
   width: 50%;
   height: 150px;    
   margin: 0;
-  position: relative;
 }
 
 .topics_item>a {
   width: 100%;
   height: 100%;
+  position: relative;  
 }
 
 .topics_item>a::before {
   content: '';
   display: block;
-  width: 70px;
-  height: 86px;
-  background-image: url(img/icons.png);
+  position: absolute;
+  width: 36px;
+  height: 43px;
+  top: 50%; left: 50%;
+  transform:translate(-50%,-50%);
+  background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
 }
 
 .topics_item:first-child>a::before {
-  background-position: -236px -124px;
+  background-position: -118px -64px;
   /*Error Codes*/
 }
 
 .topics_item:nth-child(2)>a::before {
-  background-position: -307px -124px;
+  background-position: -156px -64px;
   /*Service Guide*/
 }
 
 .topics_item:nth-child(3)>a::before {
-  background-position: -384px -124px;
+  background-position: -190px -64px;
   /*Parts Catalog*/
 }
 
 .topics_item:nth-child(4)>a::before {
-  background-position: -464px -124px;
+  background-position: -230px -64px;
   /*Sypmtoms*/
 }
 
 .topics_item:nth-child(5)>a::before {
-  background-position: -542px -124px;
+  background-position: -270px -64px;
   /*Product Info*/
 }
 
 .topics_item:last-child>a::before {
-  background-position: -614px -124px;
+  width:38px;
+  background-position: -306px -64px;
   /*FAQ*/
 }
 
 #recent>button {
-  width: 34px;
-  height: 52px;
-  background-image: url(img/icons.png);
+  width: 16px;
+  height: 26px;
+  background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
 }
 
@@ -327,19 +331,19 @@ article {
 }
 
 .prev {
-  background-position: -194px -70px;
+  background-position: -96px -33px;
 }
 
 .prev:hover {
-  background-position: -266px -70px;
+  background-position: -131px -33px;
 }
 
 .next {
-  background-position: -230px -70px;
+  background-position: -113px -33px;
 }
 
 .next:hover {
-  background-position: -302px -70px;
+  background-position: -150px -33px;
 }
 
 footer {
@@ -407,32 +411,32 @@ footer {
 
 #sns>li>a::before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 11px;
   position: absolute;
   top: 0;
   left: 33.3%;
-  background-image: url(img/icons.png);
+  background-image: url(img/icons_m.png);
 }
 
 .facebook::before {
-  background-position: -164px 0px;
+  background-position: -82px 0px;
 }
 
 .twitter::before {
-  background-position: -184px 0px;
+  background-position: -91px 0px;
 }
 
 .youtube::before {
-  background-position: -210px -5px;
+  background-position: -103px -5px;
 }
 
 .pinterest::before {
-  background-position: -238px 0px;
+  background-position: -117px 0px;
 }
 
 .etc::before {
-  background-position: -260px 0px;
+  background-position: -130px 0px;
 }
 
 /*pc
