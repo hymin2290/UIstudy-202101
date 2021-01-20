@@ -6,6 +6,9 @@ body {
   text-align: center;
 }
 
+#panelHeader {
+    height: 45px;
+  }
 .logo1 a::before {
   content: '';
   background-image: url(img/icons.png);
@@ -124,10 +127,12 @@ nav {
 }
 
 /*임시*/
-
 #bread {
+  height: 26px;
+  font-size: 11px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 
 #bread>p {
   text-align: left;
@@ -137,10 +142,16 @@ nav {
 
 article {
   width: 100%;
-  padding: 0 20%;
+  margin: 0 20%;
+  margin-top: 40px;  
 }
 
+#main {
+    margin-top: 60px;
+  }
+
 .menu_title {
+  font-size: 22px;  
   color: #fff;
   text-align: center;
 }
@@ -150,6 +161,8 @@ article {
 }
 
 .menu_explain {
+  font-size: 14px;
+  font-weight: lighter;
   color: #808080;
 }
 
@@ -180,10 +193,15 @@ article {
   background-position: -100px -26px;
   font-size: 0;
 }
+.category_item {
+  width: 50%;
+  height: 165px;
+}
 
 .topics_item {
   display: inline-block;
   width: 50%;
+  height: 150px;    
   margin: 0;
   position: relative;
 }
@@ -287,6 +305,10 @@ footer {
   text-decoration: underline;
   color: #0099ff;
 }
+#footerSearch {
+  width: 80%;
+  margin: 0 auto;
+}
 
 #footerSearch input {
   background-color: transparent;
@@ -356,109 +378,8 @@ footer {
   background-position: -260px 0px;
 }
 
-/*mobile*/
-@media only screen and (min-width: 320px) {
-  #panelHeader {
-    height: 45px;
-  }
+/*pc
+@media only screen and (min-width: 812px) {
 
-  nav {
-    height: 568px;
-  }
+}*/
 
-  .nav_menu li {
-    height: 24px;
-  }
-
-  #bread {
-    height: 26px;
-    font-size: 11px;
-  }
-
-  article {
-    padding-top: 40px;
-  }
-
-  #main {
-    padding-top: 60px;
-  }
-
-  .category_item {
-    width: 50%;
-    height: 165px;
-  }
-
-  .menu_title {
-    font-size: 22px;
-  }
-
-  .menu_explain {
-    font-size: 14px;
-    font-weight: lighter;
-  }
-
-  .topics_item {
-    width: 50%;
-    height: 150px;
-  }
-
-  #footerSearch {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 566px) {
-  #panelHeader {
-    height: 90px;
-  }
-
-  nav {
-    height: 1136px;
-  }
-
-  .nav_menu_name {
-    font-weight: 200;
-    font-size: 22px;
-  }
-
-  .nav_menu li {
-    height: 48px;
-  }
-
-  #bread {
-    height: 52px;
-    font-size: 20px;
-  }
-
-  article {
-    padding-top: 80px;
-  }
-
-  #main {
-    padding-top: 120px;
-  }
-
-  .menu_title {
-    font-size: 44px;
-  }
-
-  .menu_title:first {
-    font-size: 58px;
-  }
-
-  .menu_explain {
-    font-size: 28px;
-    font-weight: lighter;
-  }
-
-  .category_item {
-    width: 50%;
-    height: 330px;
-  }
-
-  .topics_item {
-    width: 50%;
-    height: 300px;
-  }
-}
