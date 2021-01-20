@@ -108,11 +108,12 @@ top:0; left: 40%;
 }
 
 nav {
-  display: block;
+  display: display; /*임시*/
   width: 55%;
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 3;
 }
 
 .nav_menu>li {
@@ -153,13 +154,15 @@ nav {
   display: none;
 }
 
-/*임시*/
 #bread {
   height: 26px;
   font-size: 11px;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 5px;
+  text-indent: 5%;
+  background-color:#000;
+  opacity: 0.5;
+  z-index: 2;
 }
-
 
 #bread>p {
   text-align: left;
@@ -169,8 +172,8 @@ nav {
 
 article {
   width: 100%;
-  margin: 0 20%;
-  margin-top: 40px;  
+  padding: 0 20%;
+  padding-top: 40px;  
 }
 
 #main {
@@ -220,9 +223,15 @@ article {
   background-position: -100px -26px;
   font-size: 0;
 }
+
 .category_item {
   width: 50%;
   height: 165px;
+}
+.category_item>img{
+  display: block;
+  width:  50%;
+  height: 50%;
 }
 
 .topics_item {
