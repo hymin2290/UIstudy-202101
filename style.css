@@ -60,9 +60,12 @@ fieldset {
 }
 
 legend {
+  width: 0;
+  height: 0;
   visibility: hidden;
   overflow: hidden;
   text-indent: -100%;
+  font-size:0;
 }
 
 .category_item>a,

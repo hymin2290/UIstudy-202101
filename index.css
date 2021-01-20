@@ -210,6 +210,11 @@ article {
   font-weight: 100;
 }
 
+#productSearch fieldset{
+ height: 40px;
+
+}
+
 #productSearch select {
   background-color: transparent;
   border: 0;
@@ -221,20 +226,30 @@ article {
   border: 0;
 }
 
-.search_send2 {
-  width: 26px;
-  height: 32px;
-  background-image: url(img/icons.png);
+.search_send2::before{
+  content:'';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
-  background-position: -100px -26px;
-  font-size: 0;
+  background-position: -50px -13px;
+}
+
+.search_send2{
+  width: 40px;
+  height: 35px;
+  position: relative;
 }
 
 .category_item {
   width: 50%;
   height: 165px;
 }
-.category_item>img{
+.category_item>a>img{
   display: block;
   width:  50%;
   height: 50%;
