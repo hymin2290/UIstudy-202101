@@ -28,7 +28,7 @@ position: absolute;
 top:0; left: 40%;
 } 
 
-/*.logo1 a::before {
+.logo1 a::before {
   content: '';
   width: 50px;
   height: 20px;
@@ -39,9 +39,9 @@ top:0; left: 40%;
   background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
   background-position: 0px -64px;
-}*/
+}
 
-.logo1 a::before {
+.logo2 a::before {
   content: '';
   width: 104px;
   height: 24px;
@@ -110,7 +110,6 @@ top:0; left: 40%;
 nav {
   display: block;
   width: 55%;
-  height: 100%;
   position: absolute;
   top: 100%;
   left: 0;
@@ -118,7 +117,7 @@ nav {
 
 .nav_menu>li {
   width: 100%;
-  padding-left: 5%;
+  text-indent: 5%;
   position: relative;
   text-align: left;
   background-color: #282828;
@@ -135,16 +134,15 @@ nav {
 .nav_menu2 {
   display: none;
   width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
 }
 
 .nav_menu2>li {
   width: 100%;
   position: relative;
   text-align: left;
+  text-indent: 10%;
   background-color: #282828;
+  font-weight: 100;
 }
 
 .nav_menu2>li:hover {
