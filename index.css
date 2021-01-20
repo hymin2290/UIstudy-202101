@@ -108,7 +108,7 @@ top:0; left: 40%;
 }
 
 nav {
-  display: display; /*임시*/
+  display: none; /*임시*/
   width: 55%;
   position: absolute;
   top: 100%;
@@ -172,13 +172,9 @@ nav {
 
 article {
   width: 100%;
-  padding: 0 20%;
-  padding-top: 40px;  
+  margin: 0 20%;
+  margin-top: 40px;  
 }
-
-#main {
-    margin-top: 60px;
-  }
 
 .menu_title {
   font-size: 22px;  
@@ -197,11 +193,21 @@ article {
 }
 
 #main {
+  height: 195px;
+  margin: 0;
   padding: 0 10%;
+  padding-top: 24px;
   background-image: url(img/main_cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
+}
+#main>.menu_title{
+  font-size: 30px;
+  line-height: 30px;
+}
+#main>.menu_title>span{
+  font-weight: 100;
 }
 
 #productSearch select {
