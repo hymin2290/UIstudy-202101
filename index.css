@@ -280,25 +280,64 @@ article {
 .category_item>a{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .category_item>a>img{
   display: block;
   width:  50%;
   height: 50%;
+  position: absolute;
+  top:20%;
+  left: 25%;
+}
+
+.category_name{
+  display: block;
+  position: absolute;
+  bottom:10%;
+  left:50%;
+  transform:translateX(-50%);
+  font-size: 12px;
+}
+
+#topics{
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#topics>ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-bottom: 2px solid #383838;
 }
 
 .topics_item {
-  display: inline-block;
   width: 50%;
-  height: 150px;    
-  margin: 0;
+  height: 165px;    
+  box-sizing: border-box;
+}
+
+.topics_item:nth-of-type(odd){
+  border:2px solid #383838;
+  border-left:none;
+  border-bottom: none;
+}
+
+.topics_item:nth-of-type(even){
+  border:2px solid #383838;
+  border-left:none;
+  border-right:none; 
+  border-bottom:none;
 }
 
 .topics_item>a {
   width: 100%;
   height: 100%;
-  position: relative;  
+  position: relative;
+  padding-top:30px;  
 }
 
 .topics_item>a::before {
