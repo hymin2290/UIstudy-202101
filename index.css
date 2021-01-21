@@ -172,7 +172,7 @@ nav {
 
 article {
   width: 100%;
-  margin: 0 20%;
+  margin: 0 auto;
   margin-top: 40px;  
 }
 
@@ -242,11 +242,6 @@ article {
   position: relative;
 }
 
-#category{
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
 #category>ul{
   width: 100%;
   display: flex;
@@ -298,11 +293,6 @@ article {
   font-size: 12px;
 }
 
-#topics{
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
 #topics>ul{
   width: 100%;
   display: flex;
@@ -342,8 +332,8 @@ article {
   position: absolute;
   width: 36px;
   height: 43px;
-  top: 50%; left: 50%;
-  transform:translate(-50%,-50%);
+  top: 40%; left: 50%;
+  transform:translate(-40%,-50%);
   background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
 }
@@ -359,6 +349,7 @@ article {
 }
 
 .topics_item:nth-child(3)>a::before {
+  width: 38px;
   background-position: -190px -64px;
   /*Parts Catalog*/
 }
@@ -381,13 +372,18 @@ article {
 
 .topics_name{
   display: block;
+  width: 70%;
   position: absolute;
-  bottom:20%;
+  bottom:15%;
   left:50%;
   transform:translateX(-50%);
   font-size: 12px;
 }
 
+#recent{
+  padding: 0 20%;
+  margin-bottom: 40px;
+}
 
 #recent>button {
   width: 16px;
@@ -422,6 +418,14 @@ article {
 
 .next:hover {
   background-position: -150px -33px;
+}
+
+#contact{
+  border-top: 2px solid #383838;
+}
+
+.customer_img{
+  width: 70%;
 }
 
 footer {
