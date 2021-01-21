@@ -381,8 +381,14 @@ article {
 }
 
 #recent{
-  padding: 0 20%;
   margin-bottom: 40px;
+  position: relative;
+}
+
+#recent>ul{
+  width:80%;
+  height:55%;
+  margin: 0 auto;
 }
 
 #recent>button {
@@ -404,8 +410,16 @@ article {
   border-radius: 20px;
 }
 
+.slide_btn{
+  width:46px;
+  height:36px;
+  position: absolute;
+  top:50%;
+}
+
 .prev {
   background-position: -96px -33px;
+  left:5%;
 }
 
 .prev:hover {
@@ -414,6 +428,7 @@ article {
 
 .next {
   background-position: -113px -33px;
+  right:5%;
 }
 
 .next:hover {
@@ -476,17 +491,17 @@ footer {
   height: 16px;
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 50%;
   margin: 0 0 0 50px;
 }
 
 #sns>li {
   width: 20%;
-  display: inline-block;
+  display: flex;
 }
 
 #sns>li>a {
-  width: inherit;
+  width: 100%;
   position: relative;
   font-size: 0;
 }
@@ -496,9 +511,10 @@ footer {
   width: 11px;
   height: 11px;
   position: absolute;
-  top: 0;
-  left: 33.3%;
+  top: 50%;
+  left: 50%;
   background-image: url(img/icons_m.png);
+  transform: translate(-50%,-50%);
 }
 
 .facebook::before {
