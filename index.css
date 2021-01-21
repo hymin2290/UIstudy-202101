@@ -487,23 +487,30 @@ footer {
 }
 
 #sns {
-  width: 50%;
-  height: 16px;
+  width: 33.3%;
+  height: 100%;
   position: absolute;
   top: 0;
-  left: 50%;
-  margin: 0 0 0 50px;
+  left: 65%;
+  display: flex;
 }
 
 #sns>li {
-  width: 20%;
-  display: flex;
+  width: 10%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
 }
 
 #sns>li>a {
   width: 100%;
-  position: relative;
+  height: 30px;
   font-size: 0;
+}
+
+#sns>li>a:hover{
+  background-color: #383838;
 }
 
 #sns>li>a::before {
@@ -526,7 +533,7 @@ footer {
 }
 
 .youtube::before {
-  background-position: -103px -5px;
+  background-position: -103px 0px;
 }
 
 .pinterest::before {
