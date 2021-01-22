@@ -204,7 +204,7 @@ article {
   margin-bottom: 36px;
   font-size: 14px;
   font-weight: lighter;
-  color: #808080;
+  color: #fff;
 }
 
 #main {
@@ -561,6 +561,9 @@ article {
   line-height: 22px;
 }
 
+#contact>.menu_explain{
+  color: #808080;
+}
 
 #contactUs{
   width: 154px;
