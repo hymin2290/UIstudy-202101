@@ -109,7 +109,7 @@ top:0; left: 40%;
 }
 
 nav {
-  display: none; /*임시*/
+  display: block; /*임시*/
   width: 55%;
   position: absolute;
   top: 100%;
@@ -123,6 +123,10 @@ nav {
   position: relative;
   text-align: left;
   background-color: #282828;
+}
+
+.nav_menu>li:first-child{
+  padding-top:20px;
 }
 
 .nav_menu>li:hover {
