@@ -211,6 +211,7 @@ article {
   margin: 0;
   padding: 0 10%;
   padding-top: 12px;
+  padding-bottom: 28px;
   background-image: url(img/main_cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
