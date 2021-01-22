@@ -291,13 +291,95 @@ article {
   position: relative;
 }
 
-.category_item>a>img{
+.category_img{
   display: block;
-  width:  50%;
-  height: 50%;
   position: absolute;
-  top:20%;
-  left: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+.category_img1{
+  width: 84px;
+  height: 65px;
+  top: 35px;
+  /*RANGES*/
+}
+
+.category_img2{
+  width: 100px;
+  height: 60px;
+  top:35px;
+  /*COOKTOPS*/
+}
+
+.category_img3{
+  width: 40px;
+  height: 66px;
+  top: 25px;
+  /*Wall Ovens*/
+}
+
+.category_img4{
+  width: 95px;
+  height: 50px;
+  top:43px;
+  /*Ventilation*/
+}
+
+.category_img5{
+  width: 85px;
+  height: 40px;
+  top: 45px;
+  /*microwaves*/
+}
+
+.category_img6{
+  width: 95px;
+  height: 35px;
+  top: 52px;
+  /*Warming Drawer*/
+}
+
+.category_img7{
+  width: 88px;
+  height: 70px;
+  top: 27px;
+  /*Outdoor*/
+}
+
+.category_img8{
+  width: 40px;
+  height: 85px;
+  top:20px;
+  /*refrigeration*/
+}
+
+.category_img9{
+  width: 58px;
+  height: 72px;
+  top: 32px;
+  /*Wine&Beverage*/
+}
+
+.category_img10{
+  width: 50px;
+  height: 71px;
+  top: 32px;
+  /*Dishwashers*/
+}
+
+.category_img11{
+  width: 77px;
+  height: 42px;
+  top: 48px;
+  /*Accessories*/
+}
+
+.category_img12{
+  width: 60px;
+  height: 65px;
+  top: 36px;
+  /*Coffee systems*/
 }
 
 .category_name{
