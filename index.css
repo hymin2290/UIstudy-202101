@@ -72,7 +72,7 @@ transform: translateX(-50%);
 
 .nav_button {
   width: 40px;
-  height: 47px;
+  height: 45px;
   position: absolute;
   font-size:0;
 }
@@ -99,29 +99,6 @@ transform: translateX(-50%);
   background-position: 0 0;
 }
 
-#headerSearch{
-  display: none;  /*임시*/
-  width: 100%;
-  height: 45px;;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #191919;
-}
-
-#headerSearch>fieldset{
-  width: 100%;
-  height: 28px;
-  position: relative;
-  background-color: #191919;
-  border: 1px solid #3a3a3a;
-}
-
-#headerSearch input{
-  background-color: transparent;
-
-}
-
 .search_send1::before {
   content: '';
   width: 13px;
@@ -144,9 +121,54 @@ transform: translateX(-50%);
   background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
   background-position: -19px 0px;
-
 }
 
+
+#headerSearch{
+  display: none;  /*임시*/
+  width: 82.5%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: #191919;
+}
+
+#headerSearch>fieldset{
+  width: 100%;
+  height: 25px;
+  margin: 10px 0;
+  margin-left: 5%;
+  position: relative;
+  background-color: #191919;
+  border: 1px solid #3a3a3a;
+}
+
+#headerSearch input{
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  text-indent: 2%;
+  font-size: 12px;
+}
+
+#headerSearch .search_send1::before{
+  transform: translate(-50%,-50%);
+}
+
+#headerSearch .search_send1{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 #btnSearch {
   top: 0;
