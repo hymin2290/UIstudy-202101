@@ -628,6 +628,7 @@ footer {
   margin-bottom: 20px;  
   font-size: 15px;
   line-height: 15px;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -642,6 +643,7 @@ footer {
 .footer_nav_menu2>li>a {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 100;
   color: #bbb;
 }
 
@@ -702,6 +704,8 @@ footer {
 #infoCorp{
   text-align: left;
   text-indent: 10%;
+  line-height: 26px;
+  font-weight: 100;
 }
 
 #infoCorp>li>a:hover{
@@ -712,6 +716,8 @@ footer {
   position: relative;
   text-align: left;
   text-indent: 10%;
+  font-weight: 100;
+  line-height: 26px;
   color: #fff;
 }
 
