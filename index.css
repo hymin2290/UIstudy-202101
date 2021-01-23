@@ -100,7 +100,7 @@ transform: translateX(-50%);
 }
 
 #headerSearch{
-  display: block;
+  display: none;  /*임시*/
   width: 100%;
   height: 45px;;
   position: absolute;
@@ -111,10 +111,16 @@ transform: translateX(-50%);
 
 #headerSearch>fieldset{
   width: 100%;
-  height: 100%;
+  height: 28px;
   position: relative;
+  background-color: #191919;
+  border: 1px solid #3a3a3a;
 }
 
+#headerSearch input{
+  background-color: transparent;
+
+}
 
 .search_send1::before {
   content: '';
@@ -127,6 +133,20 @@ transform: translateX(-50%);
   background-repeat: no-repeat;
   background-position: -50px 0px;
 }
+
+.search_exit::before{ /*header 검색창 펼침 시 표시*/
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-40%);  
+  background-image: url(img/icons_m.png);
+  background-repeat: no-repeat;
+  background-position: -19px 0px;
+
+}
+
 
 #btnSearch {
   top: 0;
