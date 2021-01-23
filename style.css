@@ -68,6 +68,8 @@ legend {
   overflow: hidden;
   text-indent: -100%;
   font-size:0;
+  margin: 0;
+  padding: 0;
 }
 
 .category_item>a,
