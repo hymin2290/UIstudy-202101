@@ -651,8 +651,10 @@ footer {
 }
 #footerSearch {
   width: 80%;
-  height: 32px;
+  height: 36px;
   margin: 0 auto;
+  margin-top: 26px;
+  margin-bottom: 28px;
   position: relative;
   border: 1px solid #808080;  
 }
@@ -671,25 +673,31 @@ footer {
   background-color: transparent;
   border: none;
   font-size: 14px;
+  font-weight: 100;
   text-indent: 5%;
 }
 
-.search-send3::before{
+.search_send3::before{
   content:'';
   width: 18px;
   height: 18px;
   background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: -132px -6px;  
+  background-position: -132px -6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);  
 }
 
 .search_send3 {
-  width: 32px;
+  width: 30px;
   height: 32px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 2.5%;
 }
+
 
 #infoCorp{
   text-align: left;
