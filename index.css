@@ -24,9 +24,10 @@ header {
   position: relative;    
   }
  
-.logo1{
+.logo{
 position: absolute;
-top:0; left: 40%;
+top:0; left: 50%;
+transform: translateX(-50%);
 } 
 
 .logo1 a::before {
@@ -645,12 +646,15 @@ footer {
 }
 #footerSearch {
   width: 80%;
+  height: 30px;
   margin: 0 auto;
+  border: 1px solid #808080;  
 }
 
 #footerSearch input {
+  width: 90%;
+  height: 100%;
   background-color: transparent;
-  border: 2px solid #808080;
 }
 
 .search_send3 {
