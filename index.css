@@ -301,7 +301,7 @@ article {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 33.3%;
+  left: 30%;
   background-color: transparent;
   border: 0;
 }
@@ -643,8 +643,8 @@ article {
 }
 
 #contactUs:hover{
-  background-color:#383838;
-  font-weight: bold;
+  background-color:#fff;
+  color: #282828;
 }
 
 footer {
