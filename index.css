@@ -770,7 +770,7 @@ footer {
   width: 10%;
   height: 100%;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
 }
 
