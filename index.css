@@ -569,7 +569,7 @@ article {
   position: absolute;
   width: 36px;
   height: 43px;
-  top: 40%; left: 50%;
+  top: 45%; left: 50%;
   transform:translate(-40%,-50%);
   background-image: url(img/icons_m.png);
   background-repeat: no-repeat;
@@ -611,7 +611,7 @@ article {
   display: block;
   width: 70%;
   position: absolute;
-  bottom: 32px;
+  bottom: 36px;
   left:50%;
   transform:translateX(-50%);
   font-size: 12px;
