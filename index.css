@@ -331,16 +331,25 @@ article {
  height: 40px;
 }
 
-#productSearch select {
-  width: 20%;
+#productSearch select{
+  /*기본 화살표 모양 감추기*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+  width: 25%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 5%;
+  /*화살표 모양 추가*/
+  background-image:url("img/icon_select_m.png");
+  background-repeat: no-repeat;
+  background-position: 85% 15px;
   background-color: transparent;
   border: 0;
   font-weight: 300;
   color: #fff;
+  cursor: pointer;
 }
 
 #productSearch option{
@@ -354,7 +363,7 @@ article {
   height: 30px;
   position: absolute;
   top: 5px;
-  left: 25%;
+  left: 27.5%;
   color: #808080;
 }
 
