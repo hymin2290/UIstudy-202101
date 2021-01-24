@@ -183,6 +183,7 @@ nav {
   top: 100%;
   left: 0;
   z-index: 3;
+  background-color: #282828;
   font-weight: 300;
 }
 
@@ -190,11 +191,22 @@ nav {
   width: 100%;
   text-indent: 5%;
   position: relative;
-  text-align: left;
+  text-align: left; 
   background-color: #282828;
   font-size: 16px;
   line-height: 16px;
 }
+
+.nav_menu>li>a{
+  /*화살표 이미지 추가*/
+  background-image:url("img/icon_select_m.png");
+  background-repeat: no-repeat; 
+  background-position: 90% 24px;
+}
+
+/*NEWSLETTERS, ADMIN 항목 화살표 이미지 삭제*/
+.nav_menu>li:nth-child(4)>a, .nav_menu>li:nth-child(5)>a{background-image: none;}
+
 
 .nav_menu_name{
   padding:20px 0;
@@ -204,9 +216,12 @@ nav {
   padding-bottom: 30px;
 }
 
-.nav_menu>li:hover {
+.nav_menu>li>a:hover {
+  background-image: url(img/icon_select2_m.png);  
   background-color: #383838;
 }
+
+
 
 .nav_menu>li:hover .nav_menu2 {
   display: block;
