@@ -93,6 +93,7 @@ legend {
 .icon_img::before{
   background-image:url("img/icons.png");
   background-repeat: no-repeat;
+  background-size: 360px 120px;
 }
 
 
