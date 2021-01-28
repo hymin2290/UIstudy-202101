@@ -98,12 +98,13 @@ legend {
   background-size: 10px 6px;
 }
 
-.select_img2{
-/*화살표 모양 ^ 추가*/
+
+/*.select_img2{
+화살표 모양 ^ 추가
   background-image:url("img/icon_select2.png");
   background-repeat: no-repeat;
   background-size: 10px 6px;
-}
+}*/
 
 /*헤더*/
 header {
@@ -254,8 +255,8 @@ transform: translateX(-50%);
 }
 
 nav {
-  display: none; /*임시*/
-  width: 60%;
+  display: display; /*임시*/
+  width: 55%;
   position: absolute;
   top: 100%;
   left: 0;
@@ -270,30 +271,22 @@ nav {
   position: relative;
   text-align: left; 
   background-color: #282828;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 11px;
+  line-height: 11px;
 }
 
 .nav_menu>li>a{
-  background-position: 90% 24px;
+  background-position: 90% 22px;
+  transition: 0.5s;
+  }
+.nav_menu>li>a:hover{ background-color: #383838;}
+
+.nav_menu>li>a.select_img:hover {
+  background-image: url(img/icon_select2.png);
+  background-position-y: 1em;  
 }
 
-/*NEWSLETTERS, ADMIN 항목 화살표 이미지 삭제*/
-.nav_menu>li:nth-child(4)>a, .nav_menu>li:nth-child(5)>a{background-image: none;}
-
-
-.nav_menu_name{
-  padding:20px 0;
-}
-
-.nav_menu_name:last-child{
-  padding-bottom: 30px;
-}
-
-.nav_menu>li>a:hover {
-  background-image: url(img/icon_select2.png);  
-  background-color: #383838;
-}
+.nav_menu_name{padding:1em 0;}
 
 .nav_menu>li:hover .nav_menu2 {
   display: block;
@@ -310,24 +303,18 @@ nav {
   text-align: left;
   text-indent: 10%;
   background-color: #282828;
-  font-size: 14px;
-  line-height: 28px;
-}
-
-.nav_menu2>li:hover {
-  background-color: #383838;
-}
-
-.nav_menu2>li>a{
-  font-size: 11;
+  font-size: 10px;
+  line-height: 20px;
   font-weight: 100;
 }
+
+.nav_menu2>li:hover{background-color: #383838;}
 
 .admin::after{
   content:'';
   display: block;
   width: 100%;
-  height: 30px;
+  height: 2em;
   border-top: 1px solid #383838;
 }
 
