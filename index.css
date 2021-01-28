@@ -1,11 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap');
 /*전체*/
-html {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -118,7 +113,7 @@ header {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-position: 0px -136px;
+  background-position: 0px -64px;
 }
 
 .logo2 a::before {
@@ -181,7 +176,7 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-position: -100px 0px;
+  background-position: -50px 0px;
 }
 
 .search_exit::before{ /*header 검색창 펼침 시 표시*/
@@ -191,7 +186,7 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-position: -38px 0px;
+  background-position: -19px 0px;
 }
 
 .header_search{
@@ -474,7 +469,7 @@ article {
   left:50%;
   top:50%;
   transform: translate(-50%,-50%);
-  background-position: -100px -30px;
+  background-position: -50px -15px;
 }
 
 .search_send2{
@@ -670,34 +665,34 @@ article {
 }
 
 .topics_item:first-child>a::before {
-  background-position: -236px -124px;
+  background-position: -118px -64px;
   /*Error Codes*/
 }
 
 .topics_item:nth-child(2)>a::before {
-  background-position: -307px -124px;
+  background-position: -156px -64px;
   /*Service Guide*/
 }
 
 .topics_item:nth-child(3)>a::before {
   width: 38px;
-  background-position: -384px -124px;
+  background-position: -190px -64px;
   /*Parts Catalog*/
 }
 
 .topics_item:nth-child(4)>a::before {
-  background-position: -464px -124px;
+  background-position: -230px -64px;
   /*Sypmtoms*/
 }
 
 .topics_item:nth-child(5)>a::before {
-  background-position: -542px -124px;
+  background-position: -270px -64px;
   /*Product Info*/
 }
 
 .topics_item:last-child>a::before {
   width:38px;
-  background-position: -614px -124px;
+  background-position: -306px -64px;
   /*FAQ*/
 }
 
@@ -937,7 +932,7 @@ footer {
 }
 
 .sns>li {
-  width: 10%;
+  width: 20%;
   height: 100%;
   align-items: flex-start;
   justify-content: space-between;
@@ -956,33 +951,35 @@ footer {
 
 .sns>li>a::before {
   content: '';
-  width: 11px;
-  height: 11px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
   background-image: url(img/icons.png);
+  background-size: 720px 240px;
   transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .facebook::before {
-  background-position: -164px 0px;
+  background-position: -160px 0px;
 }
 
 .twitter::before {
-  background-position: -184px 0px;
+  background-position: -182px 0px;
 }
 
 .youtube::before {
-  background-position: -210px 0px;
+  background-position: -208px 0px;
 }
 
 .pinterest::before {
-  background-position: -238px 0px;
+  background-position: -234px 0px;
 }
 
 .etc::before {
-  background-position: -260px 0px;
+  background-position: -258px 0px;
 }
 
 /*pc
