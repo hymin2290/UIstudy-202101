@@ -262,9 +262,6 @@ nav {
 }
 
 .nav_menu>li>a{
-  /*화살표 이미지 추가*/
-  background-image:url("img/icon_select.png");
-  background-repeat: no-repeat; 
   background-position: 90% 24px;
 }
 
@@ -425,15 +422,18 @@ article {
   position: absolute;
   top: 0;
   left: 5%;
+  font-weight: 300;
+  cursor: pointer; 
+  border: 0;
+  color: #fff;
+  background-position: 85% 15px;
+  background-color: transparent;
+}
+
+.up_img{
   /*화살표 모양 추가*/
   background-image:url("img/icon_select.png");
   background-repeat: no-repeat;
-  background-position: 85% 15px;
-  background-color: transparent;
-  border: 0;
-  font-weight: 300;
-  color: #fff;
-  cursor: pointer;
 }
 
 .product_search option{
