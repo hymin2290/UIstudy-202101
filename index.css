@@ -1,11 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap');
-/*공통*/
+/*전체*/
 html {
   margin: 0;
   padding: 0;
 }
-
 
 body {
   margin: 0;
@@ -76,7 +75,6 @@ legend {
   padding: 0;
 }
 
-
 #wrap {
   text-align: center;
 }
@@ -91,14 +89,14 @@ legend {
   box-sizing: border-box;
 }
 
-
+/*헤더*/
 header {
   width: 100%;
   background-color: #191919;
   z-index: 3;
 }
 
-#panelHeader {
+.panel_header {
   width: 100%;
   height: 45px;
   position: relative;    
@@ -156,12 +154,12 @@ transform: translateX(-50%);
   background-color: #383838;
 }
 
-#gnb {
+.gnb {
   top: 0;
   left: 0;
 }
 
-#gnb::before {
+.gnb::before {
   /*gnb 아이콘 이미지*/
   content: '';
   width: 16px;
@@ -199,7 +197,7 @@ transform: translateX(-50%);
 }
 
 
-#headerSearch{
+.header_search{
   display: none;  /*임시*/
   width: 82.5%;
   height: 45px;
@@ -210,7 +208,7 @@ transform: translateX(-50%);
   background-color: #191919;
 }
 
-#headerSearch>fieldset{
+.header_search>fieldset{
   width: 100%;
   height: 25px;
   margin: 10px 0;
@@ -220,7 +218,7 @@ transform: translateX(-50%);
   border: 1px solid #3a3a3a;
 }
 
-#headerSearch input{
+.header_search input{
   width: 90%;
   height: 100%;
   position: absolute;
@@ -232,11 +230,11 @@ transform: translateX(-50%);
   font-size: 12px;
 }
 
-#headerSearch .search_send1::before{
+.header_search .search_send1::before{
   transform: translate(-50%,-50%);
 }
 
-#headerSearch .search_send1{
+.header_search .search_send1{
   width: 30px;
   height: 30px;
   padding: 0;
@@ -245,7 +243,7 @@ transform: translateX(-50%);
   right: 0;
 }
 
-#btnSearch {
+.btn_search {
   top: 0;
   right: 0;
 }
@@ -346,7 +344,7 @@ nav {
   display: block;
 }
 
-#bread {
+.bread {
   height: 26px;
   float: left;
   position: absolute;
@@ -360,7 +358,7 @@ nav {
   z-index: 1;
 }
 
-#bread>p {
+.bread>p {
   text-align: left;
   font-weight: lighter;
   color: #a4a4a4;
@@ -396,7 +394,7 @@ article {
   color: #fff;
 }
 
-#main {
+.main {
   margin: 0;
   padding: 0 10%;
   padding-top: 12px;
@@ -407,13 +405,13 @@ article {
   background-position: left top;
 }
 
-#main>.menu_title{
+.main>.menu_title{
   font-size: 30px;
   line-height: 30px;
   padding-bottom: 24px;
 }
 
-#productSearch{
+.product_search{
   width: 100%;
   height: 40px;
   position: relative;
@@ -421,11 +419,11 @@ article {
   border-radius: 20px;
 }
 
-#productSearch fieldset{
+.product_search fieldset{
  height: 40px;
 }
 
-#productSearch select{
+.product_search select{
   /*기본 화살표 모양 감추기*/
   appearance: none;
   -webkit-appearance: none;
@@ -446,12 +444,12 @@ article {
   cursor: pointer;
 }
 
-#productSearch option{
+.product_search option{
   background-color: #191919;
   color: #fff;
 }
 
-#productSearch::after{
+.product_search::after{
   content:'|';
   width: 1px;
   height: 30px;
@@ -461,7 +459,7 @@ article {
   color: #808080;
 }
 
-#productSearch input {
+.product_search input {
   width: 55%;
   height: 100%;
   position: absolute;
@@ -492,7 +490,7 @@ article {
   right: 0;
 }
 
-#category>ul{
+.category>ul{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -629,7 +627,7 @@ article {
   font-size: 12px;
 }
 
-#topics>ul{
+.topics>ul{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -720,20 +718,20 @@ article {
   font-size: 12px;
 }
 
-#recent{
+.recent{
   position: relative;
   padding-bottom: 40px;
   border-bottom: 2px solid #383838;
 }
 
-#recent>ul{
+.recent>ul{
   width:80%;
   height:55%;
   margin: 0 auto;
   position: relative;
 }
 
-#recent>button {
+.recent>button {
   width: 16px;
   height: 26px;
   background-image: url(img/icons_m.png);
@@ -793,7 +791,7 @@ margin-left: 0;
   background-position: -150px -33px;
 }
 
-#contact{
+.contact{
   width: 70%;
   height:100%;
   margin: 0 15%;
@@ -802,22 +800,22 @@ margin-left: 0;
   position: relative;
 }
 
-#contact>img{
+.contact>img{
   height: 100%;
   transform:translateX(-25%);
 }
 
-#contact>.menu_title{
+.contact>.menu_title{
   margin-top:15px;
   margin-bottom: 15px;
   line-height: 22px;
 }
 
-#contact>.menu_explain{
+.contact>.menu_explain{
   color: #808080;
 }
 
-#contactUs{
+.contactUs{
   width: 154px;
   height: 30px;
   margin: 0 auto;
@@ -825,7 +823,7 @@ margin-left: 0;
   border: 1px solid #fff;
 }
 
-#contactUs:hover{
+.contactUs:hover{
   background-color:#fff;
   color: #282828;
 }
@@ -835,14 +833,14 @@ footer {
   background-color: #000;
 }
 
-#footerNav {
+.footer_nav {
   padding: 40px 0;
   background-color: #1f1f1f;
   text-align: left;
   text-indent: 10%;
 }
 
-#footerNavMenu>li>p {
+.footer_nav_menu>li>p {
   margin-top:40px;
   margin-bottom: 20px;  
   font-size: 15px;
@@ -851,11 +849,11 @@ footer {
   color: #fff;
 }
 
-#footerNavMenu>li:first-child>p{
+.footer_nav_menu>li:first-child>p{
   margin-top:0;
 }
 
-#footerNavMenu>li:last-child{
+.footer_nav_menu>li:last-child{
   margin-top: 40px;
 }
 
@@ -870,7 +868,7 @@ footer {
   text-decoration: underline;
   color: #0099ff;
 }
-#footerSearch {
+.footer_search {
   width: 80%;
   height: 36px;
   margin: 0 auto;
@@ -880,12 +878,12 @@ footer {
   border: 1px solid #808080;  
 }
 
-#footerSearch>fieldset{
+.footer_search>fieldset{
   width: 100%;
   height: 100%;
 }
 
-#footerSearch input {
+.footer_search input {
   width: 90%;
   height: 100%;
   position: absolute;
@@ -920,14 +918,14 @@ footer {
 }
 
 
-#infoCorp{
+.info_corp{
   text-align: left;
   text-indent: 10%;
   line-height: 26px;
   font-weight: 100;
 }
 
-#infoCorp>li>a:hover{
+.info_corp>li>a:hover{
   color:#bbb;
 }
 
@@ -940,7 +938,7 @@ footer {
   color: #fff;
 }
 
-#sns {
+.sns {
   width: 33.3%;
   height: 100%;
   position: absolute;
@@ -949,7 +947,7 @@ footer {
   display: flex;
 }
 
-#sns>li {
+.sns>li {
   width: 10%;
   height: 100%;
   align-items: flex-start;
@@ -957,17 +955,17 @@ footer {
   position: relative;
 }
 
-#sns>li>a {
+.sns>li>a {
   width: 100%;
   height: 30px;
   font-size: 0;
 }
 
-#sns>li>a:hover{
+.sns>li>a:hover{
   background-color: #383838;
 }
 
-#sns>li>a::before {
+.sns>li>a::before {
   content: '';
   width: 11px;
   height: 11px;
