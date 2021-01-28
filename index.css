@@ -152,6 +152,7 @@ transform: translateX(-50%);
   height: 45px;
   position: relative;
 }
+
 .logo1 a:hover{
   background-color:#383838;
 }
@@ -254,8 +255,9 @@ transform: translateX(-50%);
   right: 0;
 }
 
+/*내비게이션*/
 nav {
-  display: display; /*임시*/
+  display: none; /*임시*/
   width: 55%;
   position: absolute;
   top: 100%;
@@ -386,7 +388,7 @@ article {
 .main {
   margin: 0;
   padding: 0 10%;
-  padding-top: 12px;
+  padding-top: 50px;
   padding-bottom: 28px;
   background-image: url(img/main_cover.jpg);
   background-repeat: no-repeat;
@@ -702,7 +704,7 @@ article {
 
 .recent{
   position: relative;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   border-bottom: 2px solid #383838;
 }
 
@@ -775,14 +777,18 @@ margin-left: 0;
   width: 70%;
   height:100%;
   margin: 0 15%;
-  padding: 40px 0;
+  padding-bottom: 40px;
   overflow: hidden;
   position: relative;
 }
 
-.contact>img{
-  height: 50%;
-  transform:translateX(-25%);
+.customer_care{
+  margin: 0 20px;
+  height: 270px;
+  background-image:url("img/customer_care.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: 20% 0;
 }
 
 .contact>.menu_title{
