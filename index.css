@@ -128,7 +128,6 @@ header {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-repeat: no-repeat;
   background-position: 0px -197px;
 }
 
@@ -191,8 +190,6 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: -38px 0px;
 }
 
@@ -476,8 +473,6 @@ article {
   left:50%;
   top:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: -100px -30px;
 }
 
@@ -671,8 +666,6 @@ article {
   height: 43px;
   top: 45%; left: 50%;
   transform:translate(-40%,-50%);
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
 }
 
 .topics_item:first-child>a::before {
@@ -733,8 +726,6 @@ article {
 .recent>button {
   width: 16px;
   height: 26px;
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
 }
 
 .recent_item {
@@ -899,8 +890,6 @@ footer {
   content:'';
   width: 18px;
   height: 18px;
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: -132px -6px;
   position: absolute;
   top: 50%;
