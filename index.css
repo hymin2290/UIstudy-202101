@@ -271,7 +271,7 @@ nav {
 
 .nav_menu>li>a{
   /*화살표 이미지 추가*/
-  background-image:url("img/icon_select_m.png");
+  background-image:url("img/icon_select.png");
   background-repeat: no-repeat; 
   background-position: 90% 24px;
 }
@@ -289,7 +289,7 @@ nav {
 }
 
 .nav_menu>li>a:hover {
-  background-image: url(img/icon_select2_m.png);  
+  background-image: url(img/icon_select2.png);  
   background-color: #383838;
 }
 
@@ -929,7 +929,7 @@ footer {
   color:#bbb;
 }
 
-#followUs {
+.follow_us {
   position: relative;
   text-align: left;
   text-indent: 10%;
