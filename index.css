@@ -90,9 +90,10 @@ legend {
   box-sizing: border-box;
 }
 
-/* .icon_img{
+.icon_img::before{
   background-image:url("img/icons.png");
-} */
+  background-repeat: no-repeat;
+}
 
 
 /*헤더*/
@@ -116,8 +117,6 @@ header {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: 0px -136px;
 }
 
@@ -129,9 +128,8 @@ header {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: 0px -90px;
+  background-position: 0px -197px;
 }
 
 .logo{
@@ -168,8 +166,6 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
@@ -185,8 +181,6 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-image: url(img/icons.png);
-  background-repeat: no-repeat;
   background-position: -100px 0px;
 }
 
