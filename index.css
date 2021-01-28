@@ -79,6 +79,7 @@ legend {
   text-align: center;
 }
 
+/*공통*/
 .hidden_txt{
   font-size:0;
   opacity: 0;
@@ -88,6 +89,11 @@ legend {
 .box_search{
   box-sizing: border-box;
 }
+
+/* .icon_img{
+  background-image:url("img/icons.png");
+} */
+
 
 /*헤더*/
 header {
@@ -101,12 +107,6 @@ header {
   height: 45px;
   position: relative;    
   }
- 
-.logo{
-position: absolute;
-top:0; left: 50%;
-transform: translateX(-50%);
-} 
 
 .logo1 a::before {
   content: '';
@@ -116,9 +116,9 @@ transform: translateX(-50%);
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: 0px -64px;
+  background-position: 0px -136px;
 }
 
 .logo2 a::before {
@@ -129,10 +129,16 @@ transform: translateX(-50%);
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
   background-position: 0px -90px;
 }
+
+.logo{
+position: absolute;
+top:0; left: 50%;
+transform: translateX(-50%);
+} 
 
 .logo a{
   width: 120px;
@@ -154,11 +160,6 @@ transform: translateX(-50%);
   background-color: #383838;
 }
 
-.gnb {
-  top: 0;
-  left: 0;
-}
-
 .gnb::before {
   /*gnb 아이콘 이미지*/
   content: '';
@@ -167,9 +168,14 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.gnb {
+  top: 0;
+  left: 0;
 }
 
 .search_send1::before {
@@ -179,9 +185,9 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: -50px 0px;
+  background-position: -100px 0px;
 }
 
 .search_exit::before{ /*header 검색창 펼침 시 표시*/
@@ -191,11 +197,10 @@ transform: translateX(-50%);
   position: absolute;
   top:50%; left:50%;
   transform: translate(-50%,-40%);  
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: -19px 0px;
+  background-position: -38px 0px;
 }
-
 
 .header_search{
   display: none;  /*임시*/
@@ -434,7 +439,7 @@ article {
   top: 0;
   left: 5%;
   /*화살표 모양 추가*/
-  background-image:url("img/icon_select_m.png");
+  background-image:url("img/icon_select.png");
   background-repeat: no-repeat;
   background-position: 85% 15px;
   background-color: transparent;
@@ -477,9 +482,9 @@ article {
   left:50%;
   top:50%;
   transform: translate(-50%,-50%);
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
-  background-position: -50px -13px;
+  background-position: -100px -30px;
 }
 
 .search_send2{
@@ -672,39 +677,39 @@ article {
   height: 43px;
   top: 45%; left: 50%;
   transform:translate(-40%,-50%);
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
 }
 
 .topics_item:first-child>a::before {
-  background-position: -118px -64px;
+  background-position: -236px -124px;
   /*Error Codes*/
 }
 
 .topics_item:nth-child(2)>a::before {
-  background-position: -156px -64px;
+  background-position: -307px -124px;
   /*Service Guide*/
 }
 
 .topics_item:nth-child(3)>a::before {
   width: 38px;
-  background-position: -190px -64px;
+  background-position: -384px -124px;
   /*Parts Catalog*/
 }
 
 .topics_item:nth-child(4)>a::before {
-  background-position: -230px -64px;
+  background-position: -464px -124px;
   /*Sypmtoms*/
 }
 
 .topics_item:nth-child(5)>a::before {
-  background-position: -270px -64px;
+  background-position: -542px -124px;
   /*Product Info*/
 }
 
 .topics_item:last-child>a::before {
   width:38px;
-  background-position: -306px -64px;
+  background-position: -614px -124px;
   /*FAQ*/
 }
 
@@ -734,7 +739,7 @@ article {
 .recent>button {
   width: 16px;
   height: 26px;
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   background-repeat: no-repeat;
 }
 
@@ -774,21 +779,21 @@ margin-left: 0;
 }
 
 .prev {
-  background-position: -96px -33px;
+  background-position: -194px -70px;
   left:5%;
 }
 
 .prev:hover {
-  background-position: -131px -33px;
+  background-position: -266px -70px;
 }
 
 .next {
-  background-position: -113px -33px;
+  background-position: -230px -70px;
   right:5%;
 }
 
 .next:hover {
-  background-position: -150px -33px;
+  background-position: -302px -70px;
 }
 
 .contact{
@@ -972,28 +977,28 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(img/icons_m.png);
+  background-image: url(img/icons.png);
   transform: translate(-50%,-50%);
 }
 
 .facebook::before {
-  background-position: -82px 0px;
+  background-position: -164px 0px;
 }
 
 .twitter::before {
-  background-position: -91px 0px;
+  background-position: -184px 0px;
 }
 
 .youtube::before {
-  background-position: -103px 0px;
+  background-position: -210px 0px;
 }
 
 .pinterest::before {
-  background-position: -117px 0px;
+  background-position: -238px 0px;
 }
 
 .etc::before {
-  background-position: -130px 0px;
+  background-position: -260px 0px;
 }
 
 /*pc
