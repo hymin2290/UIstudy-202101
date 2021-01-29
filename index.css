@@ -87,6 +87,7 @@ legend {
 
 /*아이콘 이미지*/
 .icon_img::before{
+  content:'';
   background-image:url("img/icons.png");
   background-repeat: no-repeat;
   background-size: 360px 120px;
@@ -730,11 +731,6 @@ article {
   position: relative;
 }
 
-.recent>button {
-  width: 16px;
-  height: 26px;
-}
-
 .recent_item {
   width: 100%;
   height: 100%;
@@ -744,7 +740,7 @@ article {
 }
 
 .recent_on{
-margin-left: 0;
+  margin-left: 0;
 }
 
 .recent_off{
@@ -763,30 +759,33 @@ margin-left: 0;
   font-weight: bold;
 }
 
-.slide_btn{
-  width:46px;
-  height:36px;
+.slide_btn::before{
+  width: 16px;
+  height: 30px;
   position: absolute;
   top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.prev {
-  background-position: -194px -70px;
-  left:5%;
+.slide_btn{
+  width:36px;
+  height:36px;
+  position: absolute;
+  top:40%;
 }
 
-.prev:hover {
-  background-position: -266px -70px;
-}
+.prev::before{background-position: -95px -34px;}
 
-.next {
-  background-position: -230px -70px;
-  right:5%;
-}
+.prev:hover:before{background-position: -133px -34px;}
 
-.next:hover {
-  background-position: -302px -70px;
-}
+.prev{left: 0;}
+
+.next::before{background-position: -114px -34px;}
+
+.next{right:0;}
+
+.next:hover:before {background-position: -150px -34px;}
 
 .contact{
   width: 70%;
