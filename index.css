@@ -718,6 +718,7 @@ article {
   transform:translateX(-55%);
 }
 
+/*최근 검색한 상품*/
 .recent{
   position: relative;
   margin-bottom: 40px;
@@ -725,28 +726,36 @@ article {
 }
 
 .recent>ul{
-  width:80%;
-  height:55%;
   margin: 0 auto;
   position: relative;
+  height: 170px;
 }
 
 .recent_item {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  display: inline-block;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
   background-color: #333;
   color: #c8c8c8;
 }
 
-.recent_on{
-  margin-left: 0;
+.recent_item>figure{
+  width: 40%;
+  height: 100%;
 }
 
-.recent_off{
-  width:0;
-  height: 0;
+.recent_info{
+  width: 60%;
+  height: 100%;
 }
+
+.recent_on{
+  display: inline-flex;
+  }
+
 
 .recent_item>a {
   width: 146px;
