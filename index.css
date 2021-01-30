@@ -42,6 +42,8 @@ header {
   z-index: 3;
 }
 
+.panel_user{display: none;}
+
 .panel_header {
   width: 100%;
   height: 45px;
@@ -961,6 +963,8 @@ footer {
 
 /*pc*/
 @media only screen and (min-width: 812px) {
+
+
 
 }
 
