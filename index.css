@@ -750,9 +750,7 @@ article {
   color: #c8c8c8;
 }
 
-.recent_on{
-  display: inline-flex;
-  }
+.recent_on{display: inline-flex;}
 
 .recent_img{
   width: 30%;
@@ -768,16 +766,22 @@ article {
 .recent_img:first-child>img{
   width: 55px;
   height: 100px;
-  top:20%;
-  left: 15%;
+  top:0;
+  left: 30%;
 }
 
 .recent_info{
   width: 70%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 10px;
   font-size: 10px;
 }
 
+.recent_info>p{margin-bottom: 10px;}
 
 .recent_info>a {
   width: 146px;
