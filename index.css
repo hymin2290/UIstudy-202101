@@ -721,15 +721,20 @@ article {
 
 /*최근 검색한 상품*/
 .recent{
+  height: 276px;
   position: relative;
   margin-bottom: 40px;
   border-bottom: 1px solid #383838;
 }
 
+.recent>.menu_title{
+  margin-bottom: 30px;
+}
+
 .recent>ul{
   margin: 0 auto;
   position: relative;
-  height: 170px;
+  height: 100px;
 }
 
 .recent_item {
@@ -739,26 +744,42 @@ article {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 30px;
   background-color: #333;
   color: #c8c8c8;
-}
-
-.recent_item>figure{
-  width: 40%;
-  height: 100%;
-}
-
-.recent_info{
-  width: 60%;
-  height: 100%;
 }
 
 .recent_on{
   display: inline-flex;
   }
 
+.recent_img{
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
 
-.recent_item>a {
+.recent_img>img{
+  display: block;
+  position: absolute;
+  }
+
+.recent_img:first-child>img{
+  width: 55px;
+  height: 100px;
+  top:20%;
+  left: 15%;
+}
+
+.recent_info{
+  width: 70%;
+  height: 100%;
+  font-size: 10px;
+}
+
+
+.recent_info>a {
   width: 146px;
   height: 30px;
   color: #c8c8c8;
@@ -782,7 +803,7 @@ article {
   width:36px;
   height:36px;
   position: absolute;
-  top:40%;
+  top:50%;
 }
 
 .prev::before{background-position: -95px -34px;}
@@ -801,6 +822,7 @@ article {
   width: 70%;
   height:100%;
   margin: 0 15%;
+  margin-top: 40px;
   padding-bottom: 40px;
   overflow: hidden;
   position: relative;
