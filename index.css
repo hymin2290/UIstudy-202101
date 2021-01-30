@@ -978,12 +978,49 @@ footer {
 
 .panel_header{height: 55px;}
 
+.logo{left: 5%;}
+.logo a{height: 55px;}
+
+nav{
+  display: block;
+  top: 0;
+  left: 40%;
+  }
+
+.nav_menu{
+  width: 100%;
+  display: flex;
+  }
+
+.nav_menu>li{
+  width: 20%;
+  display: inline-block;
+  text-indent: 0;
+  }  
+
+.nav_menu>li:nth-child(6),
+.nav_menu>li:nth-child(7),
+.nav_menu>li:last-child{display: none;}
+
+.admin::after{display: none;}
+
+.nav_menu>li>a{
+  text-align: center;
+  transition: 0s;
+  }
+
+.nav_menu_name.select_img{background-image: none;}
+
+.nav_menu_name.select_img:hover{background-image: none;}
+
 
 article{
   width: 80%;
   margin: 0 10%;
   margin-top: 80px;
   }
+
+.menu_title{font-weight: 300;}
 
 .main{
   width: 100%;
