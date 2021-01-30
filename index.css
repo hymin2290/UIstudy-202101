@@ -21,7 +21,8 @@ footer {
 
 h1,
 h2,
-p {
+p,
+figure {
   margin: 0;
   padding: 0;
 }
