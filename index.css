@@ -888,6 +888,8 @@ footer {
   font-weight: 100;
 }
 
+.info_corp>li:last-child{display: none;}
+
 .info_corp>li>a:hover{
   color:#bbb;
 }
@@ -976,16 +978,15 @@ footer {
   background-color: #2a2a2a;
   }
 
-.panel_header{height: 55px;}
+.panel_header{height: 28px;}
 
 .logo{left: 5%;}
-.logo a{height: 55px;}
+.logo a{height: 28px;}
 
 nav{
   display: block;
   top: 0;
   left: 40%;
-  font-size: 16px;
   }
 
 .nav_menu{
@@ -995,10 +996,11 @@ nav{
 
 .nav_menu>li{
   width: 20%;
-  height: 55px;
+  height: 28px;
   display: inline-block;
   text-indent: 0;
-  line-height: 32px;
+  font-size: 8px;
+  line-height: 8px;
   }  
 
 .nav_menu>li:nth-child(6),
@@ -1018,7 +1020,7 @@ nav{
 
 .nav_menu2{
   position: absolute;
-  top: 55px;
+  top: 28px;
   left: 0;
   z-index: 2;
   background-color: #171717;
@@ -1032,14 +1034,14 @@ nav{
 article{
   width: 90%;
   margin: 0 5%;
-  margin-top: 80px;
+  margin-top: 40px;
   }
 
 .menu_title{font-weight: 300;}
 
 .main{
   width: 100%;
-  height: 440px;
+  height: 220px;
   margin: 0 auto;
   }
 
@@ -1106,22 +1108,33 @@ footer{
 
 .info_corp{
   width: 100%;
-  height: 86px;
+  height: 43px;
   position: absolute;
   bottom: 0;
   left: 0;
+  text-indent: 5%;
   background-color: #1f1f1f;
+  border-top: 1px solid #565656;
 }
 
 .info_corp>li{
   width: 10%;
+  height: 44px;
   display: inline-flex;
-  font-size: 15px;
+  justify-content: center;   
+}
+
+.info_corp>li:nth-child(2){width: 12.5%;}
+
+.info_corp>li:last-child{
+  display: inline-flex;
 }
 
 .info_corp>li>a{
-  width: 100%;
-  height: 100%;
+  width: 100%; 
+  font-size: 10px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 }
