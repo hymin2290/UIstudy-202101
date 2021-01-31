@@ -1032,34 +1032,70 @@ nav{
   background-color:#171717;}
 
 article{
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 40px;
   }
+
+article::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background-color: #535353;
+}
 
 .menu_title{font-weight: 300;}
 
 .main{
   width: 100%;
   height: 220px;
-  margin: 0 auto;
+  border-top: none;
   }
 
-.category>ul{
-  width: 100%;
-  background-color: #333;
-}
+.category>ul,
+.topics>ul{
+  width: 90%;
+  margin:0 5%;}
+
+
+.category>ul{background-color: #333;}
 
 .category_item{
   width: 20%;
   display: inline-block;
   }
 
+
+.topics{border: none;}
+
+.topics>ul{border: none;}
+
 .topics_item{
   width: 16%;
+  position: relative;
   justify-content: space-evenly;
-  border: none;
   }
+
+.topics_item:nth-of-type(odd){border: none;}
+
+.topics_item:nth-of-type(even){border: none;}
+
+.topics_item::after{
+  content:'';
+  width: 1px;
+  height: 20%;
+  display: block;
+  position: absolute;
+  top: 33.3333%;
+  right: 0;
+  background-color:#535353;
+}
+
+.topics_item:last-child::after{
+  display: none;
+}
 
 .contact_us{
   padding-top: 1em;
