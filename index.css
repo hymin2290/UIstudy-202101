@@ -1048,9 +1048,13 @@ article::before{
   background-color: #535353;
 }
 
+.main::before,
+.category::before{display: none;}
+
 .menu_title{font-weight: 300;}
 
 .menu_explain{color: #9f9f9f;}
+
 
 .main{
   width: 100%;
