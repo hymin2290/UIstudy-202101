@@ -1073,6 +1073,11 @@ article::before{
 
 .topics{border: none;}
 
+.topics>.menu_title{
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
 .topics>ul{border: none;}
 
 .topics_item{
